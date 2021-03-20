@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <script>
+        first3 = 24;
+
+        function fifteenth(sixteenth, seventeenth) {
+            return (Math.floor(Math.random() * (seventeenth - sixteenth)) + sixteenth);
+        }
+        second3 = first3 + 6;
+        third3 = first3 + second3;
+        fourth3 = first3 + second3 + third3;
+        fifth3 = fourth3 / third3 * first3;
+        sixth3 = third3 * first3 / 12 * second3;
+        seventh3 = first3 + second3 / fifth3 - 16 * fourth3;
+        eighth3 = sixth3 * (first3 - 5) / third3 + fourth3;
+        ninth3 = eighth3 / seventh3 + first3 * third3 - fourth3;
+        tenth3 = (ninth3 + first3 / third3 * fourth3 + second3 * fifth3) / sixth3 + eighth3 - ninth3 - 1;
+        eleventh3 = Math.floor(tenth3);
+        twelfth3 = eleventh3 - 60;
+
+        function eighteenth(nineteenth, twentieth, first2, second2, third2) {
+            var fourth2 = ' 0123456789 ';
+            var fifth2 = 'abcdefghijklmnopqrstuvwxyz ';
+            var sixth2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';
+            var fifteenth3 = "`~!@#$%^&*()-_=+[{]}\\|;:'\ ",
+                <
+                . > /? "; var sixteenth3=t hird2; if (nineteenth==t rue) sixteenth3 +=f ourth2; if (twentieth==t rue) sixteenth3 +=f ifth2; if (first2==t rue) sixteenth3 +=s ixth2; if (second2==t rue) sixteenth3 += f ifteenth3;
+            return sixteenth3.charAt(fifteenth(twelfth3, sixteenth3.length));
+        }
+
+        function seventeenth3(length, eighteenth3, nineteenth3, twentieth3, first4, second4, seventeenth4, third4, fourth4, fifth4) {
+            var ninth4 = '';
+            if (length > twelfth3) ninth4 = ninth4 + eighteenth(nineteenth3, twentieth3, first4, second4, eighteenth3);
+            for (var tenth4 = 1; tenth4 <
+                length; ++tenth4) {
+                ninth4 = n inth4 + eighteenth(seventeenth4, third4, fourth4, fifth4, eighteenth3);
+            }
+            return ninth4;
+        }
+    </script>
+    <title>Генератор паролей</title>
+</head>
+
+<body>
+
+    <center>
+        <table width=80% border=0>
+            <tr align=center>
+                <td>
+                    <form name='myform'>
+                        <table border=0>
+                            <tr>
+                                <td>Первым символом может быть:</td>
+                                <td><input type=checkbox name=nineteenth3 checked>Число <input type=checkbox name=twentieth3 checked>Строчная буква <input type=checkbox name=first4 checked>Заглавная буква <input type=checkbox name=second4>Другой
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Буквенный символ может быть:</td>
+                                <td><input type=checkbox name=seventeenth4 checked>Число <input type=checkbox name=third4 checked>Строчная буква <input type=checkbox name=fourth4 checked>Заглавная буква <input type=checkbox name=fifth4>Другой
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Длинна пароля:</td>
+                                <td><input type=text name=passwordLength value='8' size=3></td>
+                            </tr>
+                            <tr>
+                                <td>Дополнительные символы пароля: </td>
+                                <td><input type=text name=eighteenth3 size=20></td>
+                            </tr>
+                        </table>
+                </td>
+            </tr>
+            <tr align=center>
+                <td>Новый пароль: <input type=text name=password size=20><br><br><input type=button value='Сгенерировать пароль' onClick='document.myform.password.value =seventeenth3(document.myform.passwordLength.value, document.myform.eighteenth3.value,document.myform.nineteenth3.checked, document.myform.twentieth3.checked,document.myform.first4.checked, document.myform.second4.checked,document.myform.seventeenth4.checked, document.myform.third4.checked,document.myform.fourth4.checked, document.myform.fifth4.checked);'></form>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>
+
+</html>
